@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="http://cdn.font-store.ir/yekan.css" rel="stylesheet" type="text/css" />
+    <title>صفحه اصلی</title>
+    <link rel="stylesheet" href="CssReset.css"/>
+    <link rel="stylesheet" href="style1.css" />
+<style>
+  .checkbox-wrapper-57 input[type="checkbox"] 
+  {
+    visibility: hidden;
+    display: none;
+  }
+
+  .checkbox-wrapper-57 *,
+  .checkbox-wrapper-57 ::after,
+  .checkbox-wrapper-57 ::before 
+    {
+    box-sizing: border-box;
+  }
+
+  .checkbox-wrapper-57 .label-checkbox
+    {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    user-select: none;
+  }
+
+  /* Create a custom checkbox */
+  .checkbox-wrapper-57 .checkmark 
+    {
+    position: relative;
+    top: -28px;
+    bottom:33px;
+    left: 18em;
+    height: 1.3em;
+    width: 1.3em;
+    background: black;
+    border-radius: 50px;
+    transition: all 0.7s;
+    --spread: 20px;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-wrapper-57 .label-checkbox input:checked ~ .checkmark 
+    {
+    background: black;
+    box-shadow: -10px -10px var(--spread) 0px #5B51D8, 0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+    }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkbox-wrapper-57 .checkmark::after 
+    {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .checkbox-wrapper-57 .label-checkbox input:checked ~ .checkmark::after
+    {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .checkbox-wrapper-57 .label-checkbox .checkmark::after 
+    {
+    left: 0.5em;
+    top: 0.34em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid #f0f0f0;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+  }
+</style>
+  </head> 
+  <body>
+    <div class="continer">
+      <div class="form">
+        <h3 class="formtitle">login form</h3>
+        <label for="name">name:</label>
+        <input type="text" name="name" id="name" class="from-control" placeholder="Enter your name">
+        <label for="lastname">lastname:</label>
+        <input type="text" name="lastname" id="lastname" class="from-control" placeholder="Enter your last name">
+        <label for="username">username:</label>
+        <input type="text" name="username" id="username" class="from-control" placeholder="Enter your username">
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password" class="from-control" placeholder="Enter your password">
+        <label for="phonenumber">phone number:</label>
+        <input type="text" name="phonenumber" id="phonenumbe" class="from-control" placeholder="Enter your phone number">
+        <div class="checkbox-wrapper-57">
+        <label class="label-checkbox">
+          I agree with the rules:
+        <input type="checkbox">
+        <div class="checkmark"></div>
+        </label>
+        </div>  
+        <button class="button-64" role="button"><span class="text">LOGIN</span></button>
+      </div>
+    </div>
+  </body>
+</html>
